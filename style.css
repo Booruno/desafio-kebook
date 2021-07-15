@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* CORES */
+
+/* NAVBAR TOPO HEADER */
+
+/* home */
+.home{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .home {
+        background: url(assets/back-home.png);
+    }
+}
