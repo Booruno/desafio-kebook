@@ -7,7 +7,7 @@
 
 /* Links */
 a {
-  color: white;
+  color: var(--branco);
   transition: 0.3s;
 }
 a:hover {
@@ -38,11 +38,20 @@ a:hover {
 /* body */
 body {
   font-family: "Nunito", sans-serif;
+  background: var(--cinzaclaro);
+  font-size: 16px;
+}
+main {
+  background: url(assets/back-home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* imagens */
 .logo {
-  width: 7rem;
+  margin-top: 1rem;
+  width: 8rem;
   margin-left: 3rem;
 }
 
@@ -53,21 +62,56 @@ body {
 
 /* botoes */
 .btnlogin {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   border-color: white;
   color: #ffffff;
   background: transparent;
   border-style: solid;
   border-radius: 3rem;
-  width: 15rem;
+  width: 12rem;
   height: 3rem;
   cursor: pointer;
 }
 
+.btnCurso {
+  color: var(--branco);
+  background: var(--error);
+  border-style: hidden;
+  border-radius: 3rem;
+  width: 254px;
+  height: 58px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
 
+.btnEnsinar {
+  border-color: white;
+  color: #ffffff;
+  background: transparent;
+  border-style: solid;
+  border-radius: 3rem;
+  width: 368px;
+  height: 62px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.botoes {
+  margin-top: -3rem;
+}
+
+.temCadastro p {
+  font-size: 15px;
+}
+
+.temCadastro a {
+  text-decoration: underline;
+}
 /* navbar */
 nav {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,45 +126,100 @@ nav {
 }
 
 .nav-list li {
-  letter-spacing: 2px;
+  margin-top: 2.5rem;
   margin-left: 5rem;
-  margin-top: 2rem;
+  letter-spacing: 2px;
 }
 
 /* menu mobile */
 
-.menumobile{
-    display: none;
-    cursor: pointer;
+.menumobile {
+  display: none;
+  cursor: pointer;
 }
 .menumobile div {
-    width: 30px;
-    height: 2px;
-    background: var(--branco);
-    margin: 8px;
+  width: 30px;
+  height: 2px;
+  background: var(--branco);
+  margin: 8px;
 }
 
 /* home background*/
 .home {
-  background: url(assets/back-home.png);
-  margin-top: -6.5rem;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  font-size: 6rem;
+  font-weight: normal;
+  color: var(--branco);
+}
+p {
+  font-size: 20px;
+}
+h1 {
+  font-size: 5rem;
 }
 
+.topo {
+  margin-top: 2rem;
+}
+
+.imgHome {
+  width: 470px;
+  margin-bottom: -27rem;
+}
 
 /* medias */
-@media (max-width: 999px){
-    .nav-list{
-        position: absolute;
-        top: 12vh;
-        left: 0;
-        width: 100vw;
-        height: 90vh;
-        background: var(--alert);
-        flex-direction: column;
-        align-items: center;
-        font-weight: bolder;
-    }
+@media (max-width: 1050px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100vw;
+    height: 88vh;
+    background: var(--alert);
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    transform: translateX(100%);
+    display: none;
+  }
+  .nav-list li {
+    margin-left: 0;
+  }
+  .menumobile {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 1700px) {
+  .nav-list li {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1550px) {
+  .nav-list li {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .nav-list li {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-list li {
+    margin-left: 0.5rem;
+    font-size: 80%;
+  }
+  .botoes {
+    margin-top: -5rem;
+  }
 }

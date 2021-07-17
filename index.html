@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>Kebook | Onde você aprende, ensina e empreende onlinha</title>
@@ -16,13 +16,8 @@
 </head>
 
 <body>
-
-    <header>
+    <main>
         <nav>
-            <!-- logo -->
-            <a href="/">
-                <img class="logo" src="assets/logokebook.svg" alt="logo kebook">
-            </a>
             <!-- menu mobile -->
             <div class="menumobile">
                 <div class="linha1"></div>
@@ -30,10 +25,14 @@
                 <div class="linha3"></div>
 
             </div>
+            <!-- logo -->
+            <a href="/">
+                <img class="logo" src="assets/logokebook.svg" alt="logo kebook">
+            </a>
 
             <!-- Opções navbar -->
             <ul class="nav-list">
-                <li><a href="">Categorias</a></li>
+                <li><a href="">Categorias <img src="assets/icons8-menu.svg" alt=""></a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre</a></li>
                 <li><a href="">Instrutor</a></li>
@@ -45,35 +44,53 @@
             <!-- busca -->
             <a href=""><img class="lupa" src="assets/iconepesquisa.svg" alt=""></a>
             <!-- login -->
-            <a href=""><button class="btnlogin">Login | Inscrever-se</button></a>
+            <a href=""><button class="btnlogin"><img src="assets/user.png" alt=""> Login | Inscrever-se</button></a>
         </nav>
-    </header>
 
-    <section class="home">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section class="home">
+            <div class="container">
+                <div class="row">
+                    <!-- primeira seção titulo -->
+                    <div class="col-md-7 topo">
+                        <h1>Investir em
+                            <br> Seu <b> Futuro</b>
+                        </h1>
+                        <p>A Kebook tem os cursos online que você precisa para ser o profissional que o mercado de hoje
+                            procura</p>
 
+                        <!-- botoes -->
+                        <div class="row botoes">
+                            <div class="col-md-5">
+                                <a href=""><button class="btnCurso">Comprar Curso</button></a>
+
+                            </div>
+                            <div class="col-md-7">
+                                <a href=""><button class="btnEnsinar">Comece a ensinar agora mesmo</button></a>
+
+                            </div>
+                        </div>
+                        <!-- tem cadastro? -->
+                        <div class="temCadastro">
+                            <p> Tem cadastro na Kebook? <a href="https://kebook.com.br/login">Acesse seu perfil</a></p>
+                        </div>
+                    </div>
+                    <!-- imagem foguete -->
+                    <div class="col-md-5">
+                        <img class="imgHome" src="assets/illustra-home-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="test">
+        <br>
     </section>
 
+
+    <!-- navbar javascript -->
+    <script src="navbar.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
