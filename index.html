@@ -17,36 +17,98 @@
 
 <body>
     <main>
-        <nav>
-            <!-- menu mobile -->
-            <div class="menumobile">
-                <div class="linha1"></div>
-                <div class="linha2"></div>
-                <div class="linha3"></div>
+        <!-- NAVBAR 2 -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-            </div>
-            <!-- logo -->
-            <a href="">
+            <!-- BOTAO TOGGLE -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/icons8-menu.svg" alt="Botão menu estilo hamburguer">
+            </button>
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="">
                 <img class="logo" src="assets/logokebook.svg" alt="logo kebook">
             </a>
 
-            <!-- Opções navbar -->
-            <ul class="nav-list">
-                <li><a href="">Categorias <img src="assets/icons8-menu.svg" alt=""></a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Instrutor</a></li>
-                <li><a href="">Afiliado</a></li>
-                <li><a href="">Suporte</a></li>
-                <li><a href="">Carreiras</a></li>
-                <li><a href="">Cursos</a></li>
-            </ul>
-            <!-- busca -->
-            <a href=""><img class="lupa" src="assets/iconepesquisa.svg" alt=""></a>
-            <!-- login -->
-            <a href=""><button class="btnlogin"><img src="assets/user.png" alt=""> Login | Inscrever-se</button></a>
-        </nav>
+            <!-- LINKS -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mt-4 ml-auto mr-auto fontNavbar">
+                    <!-- dropdown categorias -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="hideCategorias">Categorias</span>
+                            <img class="hideMenu" src="assets/icons8-menu.svg" alt="Icone">
+                        </a>
+                        <div class="dropdown-menu dropdown-multicol2 row-fluid" style="width: 55rem"
+                            aria-labelledby="navbarDropdownMenuLink-555">
+                            <div class="dropdown-col">
+                                <a class="dropdown-header" href="#">CATEGORIAS</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/arte">Arte</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/casa-e-jardim">Casa e Jardim</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/design-educacao">Design Educação</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/musica">Música</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-header" href="#"></a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/artesanato">Artesanato</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/comida-e-bebida">Comida e Bebida</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/estilo-de-vida-e-passatempos">Estilo de Vida e Passatempos</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/saude-e-fitness">Saúde e Fitness</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <a class="dropdown-header" href="#"></a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/carreiras">Carreiras</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/desenvolvimento-pessoal">Desenvolvimento Pessoal</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/gestao-e-negocios">Gestão e Negócios</a>
+                                <a class="dropdown-item" href="https://kebook.com.br/cursos/tecnologia-e-programacao">Tecnologia e Programação</a>
+                            </div>
 
+                        </div>
+                    </li>
+
+                    <!-- home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <!-- sobre -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/sobre">Sobre</a>
+                    </li>
+                    <!-- Instrutor -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/instrutor">Instrutor</a>
+                    </li>
+                    <!-- Afiliado -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/afiliado">Afiliado</a>
+                    </li>
+                    <!-- Suporte -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/suporte">Suporte</a>
+                    </li>
+                    <!-- Carreiras -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/carreiras">Carreiras</a>
+                    </li>
+                    <!-- Cursos -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://kebook.com.br/cursos">Cursos</a>
+                    </li>
+
+                    <!-- busca -->
+                    <a href=""><img class="lupa mr-4 hideLupa" src="assets/iconepesquisa.svg" alt=""></a>
+                    <!-- login -->
+                    <a href="https://kebook.com.br/login"><button class="btnlogin"><img src="assets/user.png" alt=""> Login |
+                            Inscrever-se</button></a>
+                </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar -->
+
+        <!-- home -->
         <section class="home">
             <div class="container">
                 <div class="row">
@@ -88,7 +150,7 @@
         <div class="container">
             <div class="row imgQualidades">
                 <!-- Especialistas -->
-                <div class="col-6 col-xl-3 ">    
+                <div class="col-6 col-xl-3 ">
                     <img src="assets/icon-1.png" alt="Aprenda com especialistas" class="imgQualidades">
                     <h2>Aprenda com especialistas</h2>
                     <p>Selecione cursos dos melhores instrutores do mercado</p>
@@ -117,9 +179,29 @@
         </div>
     </section>
 
+    <!-- Social Share Button -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5 mb-4">
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style socialShare" data-a2a-url="https://kebook.com.br/"
+                data-a2a-title="Kebook">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_email"></a>
+                <a class="a2a_button_whatsapp"></a>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Social Share Button -->
 
-    <!-- navbar javascript -->
-    <script src="navbar.js"></script>
+
+
+    <!-- socialShare js -->
+    <script src="socialShare.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
