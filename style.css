@@ -166,31 +166,24 @@ h1 {
   margin-bottom: -27rem;
 }
 
-/* medias */
-@media (max-width: 1050px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-list {
-    position: absolute;
-    top: 12vh;
-    left: 0;
-    width: 100vw;
-    height: 88vh;
-    background: var(--alert);
-    flex-direction: column;
-    align-items: center;
-    font-weight: bolder;
-    transform: translateX(100%);
-    display: none;
-  }
-  .nav-list li {
-    margin-left: 0;
-  }
-  .menumobile {
-    display: block;
-  }
+/* Imagens section qualidades */
+
+.imgQualidades {
+  margin-top: 2rem;
 }
+
+.imgQualidades p {
+  font-size: 16px;
+  color: var(--cinzatextos);
+}
+
+.imgQualidades h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--cinzatextos);
+}
+
+/* medias */
 
 .nav-list.active {
   transform: translateX(0);
@@ -219,7 +212,63 @@ h1 {
     margin-left: 0.5rem;
     font-size: 80%;
   }
-  .botoes {
-    margin-top: -5rem;
+
+  .btnCurso {
+    width: 150px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+
+  .btnEnsinar {
+    width: 250px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  .imgHome {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100vw;
+    height: 88vh;
+    background: var(--alert);
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    transform: translateX(100%);
+    display: none;
+  }
+  .nav-list li {
+    margin-left: 0;
+  }
+  .menumobile {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .imgHome {
+    width: 50%;
+    margin-top: -20rem;
+    margin-left: 10vw;
+  }
+  .imgQualidades {
+    margin-top: 0;
+  }
+  .btnCurso {
+    width: 72vw;
+    height: 5.8vh;
+  }
+  .btnEnsinar {
+    width: 72vw;
+    height: 5.8vh;
   }
 }
